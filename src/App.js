@@ -58,7 +58,7 @@ class GardenSquare extends React.Component {
 
   handleClick = (e) => {
     let current_state = this.state.square_state;
-    if (current_state != DIRT){
+    if (current_state !== DIRT){
       this.setState({square_state: current_state+1});
     }
     else {
@@ -85,13 +85,13 @@ class SeedsList extends React.Component {
   render () {
     return (
       <div className="seeds-list">
-        <h4>Seeds</h4>
         <ul>
           {PLANTS.map(function(plant, i){
               let icon = `https://www.growstuff.org/crops/${plant}.svg`;
               return (
                   <li key={i}>
                   <img src={icon} width="25" />
+                  &nbsp;
                   {plant}
               </li>);
           })}
@@ -107,9 +107,16 @@ class App extends React.Component {
 
       <div className="App">
         <header className="App-header">
-          <h1>farm</h1>
-          <SeedsList />
-          <Garden />
+          <div className="row">
+          <div className="col">
+            <h1>seeds</h1>
+            <SeedsList />
+          </div>
+          <div className="col">
+            <h1>farm</h1>
+            <Garden />
+          </div>
+          </div>
         </header>
       </div>
     );

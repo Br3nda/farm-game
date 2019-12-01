@@ -35,9 +35,16 @@ ul {
   list-style-type: none;
 }
 
+.row {
+  display: flex;
+}
+.col {
+  display: inline-block;
+}
+
 .seeds-list {
-  top: 0;
-  float: right;
+  text-align: left;
+  margin: 2em;
 }
 
 .game-area {
@@ -49,15 +56,17 @@ ul {
 .garden-row {
   display: flex;
 }
+
 .square {
   border-style: dashed;
   display: inline-block;
-  height: 100px;
-  width: 100px;
-  background-size: 100px 100px;
+  height: 200px;
+  width: 200px;
+  background-size: 200px 200px;
   border-color: black;
   border-width: 1px;
 }
+
 .grass {
   background-image: url('images/grass.png');
 }
