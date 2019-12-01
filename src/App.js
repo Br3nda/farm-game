@@ -46,12 +46,12 @@ class GardenSquare extends React.Component {
   };
 
   className = () => {
-    if(this.state.plant_name != undefined) {
+    if(this.state.plant_name !== undefined) {
       return `square ${this.state.plant_name}`
     }
-    if (this.state.square_state == GRASS)
+    if (this.state.square_state === GRASS)
       return 'square grass';
-    if (this.state.square_state == DIRT)
+    if (this.state.square_state === DIRT)
       return 'square dirt';
     return 'square';
   }
@@ -68,7 +68,7 @@ class GardenSquare extends React.Component {
       let plant_name = PLANTS[random];
       console.log(plant_name);
       this.setState({plant_name})
-      if (plant_name == undefined)
+      if (plant_name === undefined)
         this.setState({square_state: GRASS})
     }
     e.preventDefault();
