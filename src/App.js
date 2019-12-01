@@ -10,7 +10,7 @@ class Garden extends React.Component {
 
   render() {
     return (
-        <div class="game-area">
+        <div className="game-area">
         {this.state.rows.map(function(row, i){
             return <GardenRow key={i} row={row}/>;
         })}
@@ -26,7 +26,7 @@ class GardenRow extends React.Component {
 
   render() {
     return (
-        <div class="garden-row">
+        <div className="garden-row">
           {this.state.squares.map(function(square, i){
               return <GardenSquare key={i} square={square}/>;
           })}
@@ -35,11 +35,46 @@ class GardenRow extends React.Component {
   }
 }
 
+let GRASS = 0;
+let DIRT=1;
+let PLANTS = ['pumpkin', 'potatoes', 'radish', 'tomato', 'carrot', 'wheat'];
 
 class GardenSquare extends React.Component {
+  state = {
+    square_state: GRASS,
+    plant_name: undefined
+  };
+
+  className = () => {
+    if(this.state.plant_name != undefined) {
+      return `square ${this.state.plant_name}`
+    }
+    if (this.state.square_state == GRASS)
+      return 'square grass';
+    if (this.state.square_state == DIRT)
+      return 'square dirt';
+    return 'square';
+  }
+
+  handleClick = (e) => {
+    let current_state = this.state.square_state;
+    if (current_state != DIRT){
+      this.setState({square_state: current_state+1});
+    }
+    else {
+      let min = 0; let max=1;
+      var random = Math.floor(10 * Math.random() * (+max - +min) + +min);
+      console.log(random);
+      let plant_name = PLANTS[random];
+      console.log(plant_name);
+      this.setState({plant_name})
+    }
+    e.preventDefault();
+  }
+
   render() {
     return (
-      <div class="square grass"></div>
+      <div className={this.className()} onClick={this.handleClick}></div>
     );
   }
 }

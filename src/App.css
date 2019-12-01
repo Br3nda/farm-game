@@ -20,3 +20,56 @@
 .App-link {
   color: #09d3ac;
 }
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Modak', cursive;
+}
+
+.game-area {
+  border-style: solid;
+  border-width: 20px;
+  border-color: black;
+}
+
+.garden-row {
+  display: flex;
+}
+.square {
+  border-style: dashed;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-size: 100px 100px;
+  border-color: black;
+  border-width: 1px;
+}
+.grass {
+  background-image: url('images/grass.png');
+}
+.dirt {
+  background-image: url('images/dirt_with_worm.png');
+}
+.potatoes {
+  background-image: url('images/potatoes.png');
+}
+.pumpkin {
+  background-image: url('images/pumpkin.png');
+}
+.radish {
+  background-image: url('images/radish.png');
+}
+.tomato {
+  background-image: url('images/tomato.png');
+}
+.carrot {
+  background-image: url('images/carrot.png');
+}
+.wheat {
+  background-image: url('images/wheat.png');
+}
