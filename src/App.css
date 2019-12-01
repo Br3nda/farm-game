@@ -31,6 +31,15 @@ h1 {
   font-family: 'Modak', cursive;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.seeds-list {
+  top: 0;
+  float: right;
+}
+
 .game-area {
   border-style: solid;
   border-width: 20px;
@@ -55,8 +64,8 @@ h1 {
 .dirt {
   background-image: url('images/dirt_with_worm.png');
 }
-.potatoes {
-  background-image: url('images/potatoes.png');
+.potato {
+  background-image: url('images/potato.png');
 }
 .pumpkin {
   background-image: url('images/pumpkin.png');

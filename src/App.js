@@ -37,7 +37,7 @@ class GardenRow extends React.Component {
 
 let GRASS = 0;
 let DIRT=1;
-let PLANTS = ['pumpkin', 'potatoes', 'radish', 'tomato', 'carrot', 'wheat'];
+let PLANTS = ['pumpkin', 'potato', 'radish', 'tomato', 'carrot', 'wheat'];
 
 class GardenSquare extends React.Component {
   state = {
@@ -81,6 +81,26 @@ class GardenSquare extends React.Component {
   }
 }
 
+class SeedsList extends React.Component {
+  render () {
+    return (
+      <div className="seeds-list">
+        <h4>Seeds</h4>
+        <ul>
+          {PLANTS.map(function(plant, i){
+              let icon = `https://www.growstuff.org/crops/${plant}.svg`;
+              return (
+                  <li key={i}>
+                  <img src={icon} width="25" />
+                  {plant}
+              </li>);
+          })}
+        </ul>
+      </div>
+      );
+  }
+}
+
 class App extends React.Component {
   render() {
     return (
@@ -88,6 +108,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <h1>farm</h1>
+          <SeedsList />
           <Garden />
         </header>
       </div>
