@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c51a8f8986d80df26c597f4d9dfbd846",
+    "revision": "f5f7a8023dcb0d373b575465b75246e0",
     "url": "/farm-game/index.html"
   },
   {
-    "revision": "78fcbd6a8c700960b7cf",
-    "url": "/farm-game/static/css/main.556cdbc4.chunk.css"
+    "revision": "e472ef87bfb3979b5509",
+    "url": "/farm-game/static/css/main.302fb1a5.chunk.css"
   },
   {
     "revision": "9f056d04b2d355f23056",
     "url": "/farm-game/static/js/2.535be06c.chunk.js"
   },
   {
-    "revision": "78fcbd6a8c700960b7cf",
-    "url": "/farm-game/static/js/main.1224adcb.chunk.js"
+    "revision": "e472ef87bfb3979b5509",
+    "url": "/farm-game/static/js/main.ec1892a2.chunk.js"
   },
   {
     "revision": "83c1041b3e8dde149dde",
