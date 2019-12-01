@@ -68,6 +68,8 @@ class GardenSquare extends React.Component {
       let plant_name = PLANTS[random];
       console.log(plant_name);
       this.setState({plant_name})
+      if (plant_name == undefined)
+        this.setState({square_state: GRASS})
     }
     e.preventDefault();
   }
