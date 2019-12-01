@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/farm-game/static/css/main.a4babca0.chunk.css",
-    "main.js": "/farm-game/static/js/main.80dc1fa1.chunk.js",
-    "main.js.map": "/farm-game/static/js/main.80dc1fa1.chunk.js.map",
+    "main.css": "/farm-game/static/css/main.556cdbc4.chunk.css",
+    "main.js": "/farm-game/static/js/main.1224adcb.chunk.js",
+    "main.js.map": "/farm-game/static/js/main.1224adcb.chunk.js.map",
     "runtime-main.js": "/farm-game/static/js/runtime-main.66d633a3.js",
     "runtime-main.js.map": "/farm-game/static/js/runtime-main.66d633a3.js.map",
     "static/js/2.535be06c.chunk.js": "/farm-game/static/js/2.535be06c.chunk.js",
     "static/js/2.535be06c.chunk.js.map": "/farm-game/static/js/2.535be06c.chunk.js.map",
     "index.html": "/farm-game/index.html",
-    "precache-manifest.7aa94c9b9dae7f9381aa090bfd3bbfb3.js": "/farm-game/precache-manifest.7aa94c9b9dae7f9381aa090bfd3bbfb3.js",
+    "precache-manifest.7fbee9c09878ffcda4497aef67c89b59.js": "/farm-game/precache-manifest.7fbee9c09878ffcda4497aef67c89b59.js",
     "service-worker.js": "/farm-game/service-worker.js",
-    "static/css/main.a4babca0.chunk.css.map": "/farm-game/static/css/main.a4babca0.chunk.css.map",
+    "static/css/main.556cdbc4.chunk.css.map": "/farm-game/static/css/main.556cdbc4.chunk.css.map",
     "static/media/App.css": "/farm-game/static/media/wheat.ec975566.png",
     "static/media/logo.svg": "/farm-game/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.66d633a3.js",
     "static/js/2.535be06c.chunk.js",
-    "static/css/main.a4babca0.chunk.css",
-    "static/js/main.80dc1fa1.chunk.js"
+    "static/css/main.556cdbc4.chunk.css",
+    "static/js/main.1224adcb.chunk.js"
   ]
 }

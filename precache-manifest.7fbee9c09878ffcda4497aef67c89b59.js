@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ba0a1475de772e42de9a44e5dba78c9",
+    "revision": "c51a8f8986d80df26c597f4d9dfbd846",
     "url": "/farm-game/index.html"
   },
   {
-    "revision": "934aca9641ad5e7c26ef",
-    "url": "/farm-game/static/css/main.a4babca0.chunk.css"
+    "revision": "78fcbd6a8c700960b7cf",
+    "url": "/farm-game/static/css/main.556cdbc4.chunk.css"
   },
   {
     "revision": "9f056d04b2d355f23056",
     "url": "/farm-game/static/js/2.535be06c.chunk.js"
   },
   {
-    "revision": "934aca9641ad5e7c26ef",
-    "url": "/farm-game/static/js/main.80dc1fa1.chunk.js"
+    "revision": "78fcbd6a8c700960b7cf",
+    "url": "/farm-game/static/js/main.1224adcb.chunk.js"
   },
   {
     "revision": "83c1041b3e8dde149dde",
@@ -37,7 +37,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "2e085af0cc7c4f9be6ebb3e683c36720",
-    "url": "/farm-game/static/media/potatoes.2e085af0.png"
+    "url": "/farm-game/static/media/potato.2e085af0.png"
   },
   {
     "revision": "9ed3375b6bcf79b849222dcff18df50c",
