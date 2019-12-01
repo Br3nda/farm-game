@@ -82,17 +82,29 @@ class GardenSquare extends React.Component {
 }
 
 class SeedsList extends React.Component {
+  state = {
+    seeds: {
+      'pumpkin': 100,
+      'potato': 15,
+      'radish': 300,
+      'carrot': 500,
+      'wheat': 6000,
+      'tomato': 5
+    }
+  };
+
   render () {
     return (
       <div className="seeds-list">
         <ul>
-          {PLANTS.map(function(plant, i){
+          {PLANTS.map((plant, i) => {
               let icon = `https://www.growstuff.org/crops/${plant}.svg`;
               return (
                   <li key={i}>
                   <img src={icon} width="25" />
-                  &nbsp;
-                  {plant}
+                  <tt>
+                    {this.state.seeds[plant]}
+                  </tt> x {plant}
               </li>);
           })}
         </ul>
